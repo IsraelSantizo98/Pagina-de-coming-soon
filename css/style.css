@@ -1,5 +1,8 @@
 :root{
     --font: 'Josefin Sans', sans-serif;
+    --DesaturatedRed: #C79B9C;
+    --SoftRed: hsl(0, 93%, 68%);
+    --textColor: #C6A7AC;
 }
 *{
     margin: 0;
@@ -27,14 +30,32 @@ body{
 }
 /*-- Generales --*/
 h1{
-    font-size: 3rem;
+    font-size: 6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+}
+h1 span{
+    color: var(--DesaturatedRed);
+    font-weight: 300;
+}
+p{
+    color: var(--textColor);
+    font-size: 1.8rem;
+    line-height: 1.5;
 }
 img{
     max-width: 100%;
 }
 /*-- --*/
 .container{
+    /*-- Flex heredado--*/
     flex-basis: auto;
+    height: 100%;
+    /*--Flex padre--*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero-image{
     flex-basis: 50%;
@@ -44,9 +65,13 @@ img{
     height: 100%;
 }
 .contenido{
-    border: 1px solid black;
-    width: 80%;
+    width: 50%;
+    height: 90%;
+    /*--Flex padre--*/
     display: flex;
     flex-direction: column;
-    margin: auto;
+    justify-content: space-evenly;
+}
+.title, .text, form{
+    margin-bottom: 2rem;
 }
