@@ -1,0 +1,52 @@
+:root{
+    --font: 'Josefin Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    /* Reset para rems 62.5% = 10px */
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+body{
+    height: 100vh;
+    font-family: var(--font);
+    font-size: 1.6rem;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    /*Flex padre*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*-- Generales --*/
+h1{
+    font-size: 3rem;
+}
+img{
+    max-width: 100%;
+}
+/*-- --*/
+.container{
+    flex-basis: auto;
+}
+.hero-image{
+    flex-basis: 50%;
+    height: 100%;
+}
+.hero-image img{
+    height: 100%;
+}
+.contenido{
+    border: 1px solid black;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
